@@ -1,19 +1,17 @@
 {
   "name": "careerguide",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
+  "description": "CareerGuide - Student Career Guidance Web Application",
+  "main": "server.js",
+  "author": "CareerGuide Student Project",
   "license": "ISC",
-  "type": "commonjs",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
   "dependencies": {
-    "express": "^5.3.0",
-    "expresss": "^0.0.0",
-    "mongodb": "^7.7.0"
+    "express": "^5.1.0",
+    "mongodb": "^6.18.0"
   }
 }
