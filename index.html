@@ -2,597 +2,1017 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <title>CareerGuide | Career Guidance Platform</title>
 
-    <title>CareerGuide</title>
-
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<!-- Navbar -->
+    <!-- ================= NAVBAR ================= -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
 
-    <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                CareerGuide
+            </a>
 
-        <a class="navbar-brand fw-bold" href="#">
-            CareerGuide
-        </a>
-
-        <button class="navbar-toggler"
+            <button
+                class="navbar-toggler"
+                type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#menu">
-
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-        <div class="collapse navbar-collapse" id="menu">
-
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">
-                        Home
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">
-                        About
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#careers">
-                        Careers
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#roadmap">
-                        Roadmap
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">
-                        Skills
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#resources">
-                        Resources
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</nav>
-
-
-<!-- Home -->
-
-<section id="home" class="home">
-
-    <div class="container text-center">
-
-        <h1>Build Your Career With Confidence</h1>
-
-        <p>
-            Explore career options, learn important skills
-            and create your career roadmap.
-        </p>
-
-        <a href="#careers"
-           class="btn btn-primary">
-
-            Explore Careers
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- About -->
-
-<section id="about" class="section">
-
-    <div class="container">
-
-        <h2>About CareerGuide</h2>
-
-        <p>
-            CareerGuide is a student-focused web application
-            that helps students explore different career
-            opportunities and understand the skills required
-            for their chosen field.
-        </p>
-
-        <p>
-            The main aim of this project is to provide useful
-            career information in one simple platform. Students
-            can explore career options, follow basic career
-            roadmaps and find learning resources.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- Careers -->
-
-<section id="careers" class="section light">
-
-    <div class="container">
-
-        <h2>Career Options</h2>
-
-        <p class="text-center">
-            Explore popular technical career options.
-        </p>
-
-        <input type="text"
-               id="search"
-               class="form-control search"
-               placeholder="Search career...">
-
-
-        <div class="row mt-4">
-
-
-            <div class="col-md-4 career">
-
-                <div class="card">
-
-                    <div class="card-body">
-
-                        <h5>Web Developer</h5>
-
-                        <p>
-                            Develop and maintain websites
-                            and web applications.
-                        </p>
-
-                        <b>Skills:</b>
-                        <p>HTML, CSS, JavaScript</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4 career">
-
-                <div class="card">
-
-                    <div class="card-body">
-
-                        <h5>Software Developer</h5>
-
-                        <p>
-                            Design and develop software
-                            applications.
-                        </p>
-
-                        <b>Skills:</b>
-                        <p>Java, Python, C++</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4 career">
-
-                <div class="card">
-
-                    <div class="card-body">
-
-                        <h5>Data Scientist</h5>
-
-                        <p>
-                            Analyze data and find useful
-                            information from it.
-                        </p>
-
-                        <b>Skills:</b>
-                        <p>Python, Statistics</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4 career">
-
-                <div class="card">
-
-                    <div class="card-body">
-
-                        <h5>Cyber Security</h5>
-
-                        <p>
-                            Protect systems, networks and
-                            digital information.
-                        </p>
-
-                        <b>Skills:</b>
-                        <p>Networking, Security</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4 career">
-
-                <div class="card">
-
-                    <div class="card-body">
-
-                        <h5>UI/UX Designer</h5>
-
-                        <p>
-                            Design simple and user-friendly
-                            digital interfaces.
-                        </p>
-
-                        <b>Skills:</b>
-                        <p>Design, Creativity</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4 career">
-
-                <div class="card">
-
-                    <div class="card-body">
-
-                        <h5>Cloud Engineer</h5>
-
-                        <p>
-                            Work with cloud platforms and
-                            cloud-based services.
-                        </p>
-
-                        <b>Skills:</b>
-                        <p>Cloud, Networking, Linux</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Roadmap -->
-
-<section id="roadmap" class="section">
-
-    <div class="container">
-
-        <h2>Career Roadmap</h2>
-
-        <div class="roadmap">
-
-            <div class="step">
-                <h4>1. Choose a Career</h4>
-                <p>
-                    Identify your interest and choose
-                    a suitable career field.
-                </p>
-            </div>
-
-            <div class="step">
-                <h4>2. Learn the Basics</h4>
-                <p>
-                    Learn fundamental concepts related
-                    to your chosen field.
-                </p>
-            </div>
-
-            <div class="step">
-                <h4>3. Develop Skills</h4>
-                <p>
-                    Practice regularly and improve
-                    technical and soft skills.
-                </p>
-            </div>
-
-            <div class="step">
-                <h4>4. Build Projects</h4>
-                <p>
-                    Create projects to gain practical
-                    experience.
-                </p>
-            </div>
-
-            <div class="step">
-                <h4>5. Prepare for Opportunities</h4>
-                <p>
-                    Build your resume and prepare for
-                    internships and jobs.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Skills -->
-
-<section id="skills" class="section light">
-
-    <div class="container">
-
-        <h2>Important Skills</h2>
-
-        <div class="row">
-
-            <div class="col-md-4">
-
-                <div class="skill">
-
-                    <h4>Technical Skills</h4>
-
-                    <ul>
-                        <li>Programming</li>
-                        <li>Web Development</li>
-                        <li>Database</li>
-                        <li>Networking</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="skill">
-
-                    <h4>Soft Skills</h4>
-
-                    <ul>
-                        <li>Communication</li>
-                        <li>Teamwork</li>
-                        <li>Problem Solving</li>
-                        <li>Time Management</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="skill">
-
-                    <h4>Professional Skills</h4>
-
-                    <ul>
-                        <li>Resume Writing</li>
-                        <li>Interview Skills</li>
-                        <li>Presentation</li>
-                        <li>Career Planning</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Resources -->
-
-<section id="resources" class="section">
-
-    <div class="container">
-
-        <h2>Learning Resources</h2>
-
-        <div class="row">
-
-            <div class="col-md-4">
-
-                <div class="resource">
-
-                    <h4>Programming</h4>
-
-                    <p>
-                        Learn programming concepts and
-                        improve problem-solving skills.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="resource">
-
-                    <h4>Web Development</h4>
-
-                    <p>
-                        Learn HTML, CSS and JavaScript
-                        for web development.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="resource">
-
-                    <h4>Interview Preparation</h4>
-
-                    <p>
-                        Improve communication and
-                        interview preparation skills.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- SDG -->
-
-<section class="section light">
-
-    <div class="container text-center">
-
-        <h2>SDG 4 – Quality Education</h2>
-
-        <p>
-            CareerGuide supports SDG 4 by providing
-            students with accessible career and
-            learning information.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- Contact -->
-
-<section id="contact" class="section">
-
-    <div class="container">
-
-        <h2>Contact Us</h2>
-
-        <form id="contactForm">
-
-            <label>Name</label>
-
-            <input type="text"
-                   class="form-control"
-                   required>
-
-
-            <label>Email</label>
-
-            <input type="email"
-                   class="form-control"
-                   required>
-
-
-            <label>Message</label>
-
-            <textarea class="form-control"
-                      rows="4"
-                      required></textarea>
-
-
-            <button type="submit"
-                    class="btn btn-primary mt-3">
-
-                Submit
-
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
             </button>
 
-        </form>
+            <div class="collapse navbar-collapse" id="navbarMenu">
 
-    </div>
+                <ul class="navbar-nav ms-auto">
 
-</section>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#careers">Careers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#roadmap">Roadmap</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#registration">
+                            Registration
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
 
 
-<!-- Footer -->
+    <!-- ================= HOME ================= -->
 
-<footer>
+    <section id="home" class="py-5 text-center bg-light">
+
+        <div class="container py-5">
+
+            <h1 class="display-4 fw-bold text-primary">
+                Welcome to CareerGuide
+            </h1>
+
+            <p class="lead mt-3">
+                Discover Your Skills, Explore Careers and Build Your Future.
+            </p>
+
+            <p>
+                CareerGuide helps students explore career opportunities,
+                develop important skills and plan their professional journey.
+            </p>
+
+            <a href="#careers" class="btn btn-primary btn-lg mt-3">
+                Explore Careers
+            </a>
+
+            <a href="#registration" class="btn btn-outline-primary btn-lg mt-3">
+                Register Now
+            </a>
+
+        </div>
+
+    </section>
 
 
-        <p>Created by: Varli Khushi</p>
+    <!-- ================= ABOUT ================= -->
 
-        <p>Enrollment No.: 240860116061</p>
+    <section id="about" class="py-5">
 
-        <p>BE - Information Technology</p>
+        <div class="container">
 
-        <p>Web Application Development</p>
+            <h2 class="text-center text-primary mb-4">
+                About CareerGuide
+            </h2>
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+
+                    <h4>Your Career, Your Future</h4>
+
+                    <p>
+                        CareerGuide is a student-focused career guidance
+                        platform designed to help students understand
+                        different career options and professional opportunities.
+                    </p>
+
+                    <p>
+                        It provides information about career paths, required
+                        skills, learning resources and step-by-step roadmaps.
+                    </p>
+
+                </div>
+
+                <div class="col-md-6 text-center">
+
+                    <img
+                        src="https://placehold.co/500x300/eaf2ff/2457a7?text=Career+Guidance"
+                        alt="Career guidance illustration"
+                        class="img-fluid rounded shadow">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
-    <p>© 2026 CareerGuide | PBL Project</p>
+    <!-- ================= CAREERS ================= -->
 
-</footer>
+    <section id="careers" class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center text-primary mb-3">
+                Explore Career Options
+            </h2>
+
+            <p class="text-center mb-4">
+                Choose a career that matches your interests and skills.
+            </p>
+
+            <!-- Career Search -->
+
+            <div class="row justify-content-center mb-4">
+
+                <div class="col-md-6">
+
+                    <input
+                        type="text"
+                        id="search"
+                        class="form-control"
+                        placeholder="Search careers..."
+                        aria-label="Search careers">
+
+                </div>
+
+            </div>
 
 
-<!-- Bootstrap JS -->
+            <div class="row g-4">
 
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
+                <!-- Web Developer -->
 
-<script src="script.js"></script>
+                <div class="col-md-4 career">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://placehold.co/400x200/eaf2ff/2457a7?text=Web+Developer"
+                            class="card-img-top"
+                            alt="Web development">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">Web Developer</h5>
+
+                            <p class="card-text">
+                                Build websites and web applications using
+                                HTML, CSS, JavaScript and modern frameworks.
+                            </p>
+
+                            <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Software Developer -->
+
+                <div class="col-md-4 career">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://placehold.co/400x200/eaf2ff/2457a7?text=Software+Developer"
+                            class="card-img-top"
+                            alt="Software development">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">Software Developer</h5>
+
+                            <p class="card-text">
+                                Design, develop, test and maintain software
+                                applications for different purposes.
+                            </p>
+
+                            <p><strong>Skills:</strong> Java, Python, C++</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Data Scientist -->
+
+                <div class="col-md-4 career">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://placehold.co/400x200/eaf2ff/2457a7?text=Data+Scientist"
+                            class="card-img-top"
+                            alt="Data science">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">Data Scientist</h5>
+
+                            <p class="card-text">
+                                Analyze data and use statistics and machine
+                                learning to discover useful insights.
+                            </p>
+
+                            <p><strong>Skills:</strong> Python, SQL, Statistics</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Cyber Security -->
+
+                <div class="col-md-4 career">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://placehold.co/400x200/eaf2ff/2457a7?text=Cyber+Security"
+                            class="card-img-top"
+                            alt="Cyber security">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">Cyber Security Analyst</h5>
+
+                            <p class="card-text">
+                                Help protect computers, networks and data
+                                against cyber threats and attacks.
+                            </p>
+
+                            <p><strong>Skills:</strong> Networking, Linux, Security</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- UI UX Designer -->
+
+                <div class="col-md-4 career">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://placehold.co/400x200/eaf2ff/2457a7?text=UI+UX+Designer"
+                            class="card-img-top"
+                            alt="UI UX design">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">UI/UX Designer</h5>
+
+                            <p class="card-text">
+                                Create attractive, user-friendly digital
+                                interfaces and improve user experiences.
+                            </p>
+
+                            <p><strong>Skills:</strong> Figma, Design, Research</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Cloud Engineer -->
+
+                <div class="col-md-4 career">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://placehold.co/400x200/eaf2ff/2457a7?text=Cloud+Engineer"
+                            class="card-img-top"
+                            alt="Cloud computing">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">Cloud Engineer</h5>
+
+                            <p class="card-text">
+                                Manage cloud infrastructure, services,
+                                deployment and computing resources.
+                            </p>
+
+                            <p><strong>Skills:</strong> AWS, Networking, Linux</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ROADMAP ================= -->
+
+    <section id="roadmap" class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center text-primary mb-4">
+                Career Roadmap
+            </h2>
+
+            <p class="text-center mb-5">
+                Follow these steps to prepare for your future career.
+            </p>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+
+                    <div class="card h-100 text-center shadow-sm">
+
+                        <div class="card-body">
+
+                            <h3 class="text-primary">1</h3>
+
+                            <h5>Explore</h5>
+
+                            <p>
+                                Discover different career paths and
+                                understand your interests.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="card h-100 text-center shadow-sm">
+
+                        <div class="card-body">
+
+                            <h3 class="text-primary">2</h3>
+
+                            <h5>Learn</h5>
+
+                            <p>
+                                Study the concepts and tools required
+                                for your chosen career.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="card h-100 text-center shadow-sm">
+
+                        <div class="card-body">
+
+                            <h3 class="text-primary">3</h3>
+
+                            <h5>Practice</h5>
+
+                            <p>
+                                Complete practical projects and build
+                                a portfolio of your work.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="card h-100 text-center shadow-sm">
+
+                        <div class="card-body">
+
+                            <h3 class="text-primary">4</h3>
+
+                            <h5>Apply</h5>
+
+                            <p>
+                                Prepare your resume and apply for
+                                internships and suitable jobs.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center text-primary mb-4">
+                Important Career Skills
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h5>Technical Skills</h5>
+
+                            <p>
+                                Programming, computer fundamentals,
+                                databases, networking and digital tools.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h5>Communication Skills</h5>
+
+                            <p>
+                                Improve speaking, writing, presentation
+                                and teamwork abilities.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h5>Problem-Solving Skills</h5>
+
+                            <p>
+                                Develop logical thinking, creativity,
+                                analytical skills and decision-making.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RESOURCES ================= -->
+
+    <section id="resources" class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center text-primary mb-4">
+                Learning Resources
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <h5>Programming</h5>
+
+                            <p>
+                                Learn programming languages and web
+                                development fundamentals.
+                            </p>
+
+                            <a
+                                href="https://www.w3schools.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-primary">
+                                Start Learning
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <h5>Online Courses</h5>
+
+                            <p>
+                                Explore online courses to build technical
+                                knowledge and practical skills.
+                            </p>
+
+                            <a
+                                href="https://www.coursera.org/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-primary">
+                                Explore Courses
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <h5>Career Development</h5>
+
+                            <p>
+                                Explore career information, employment
+                                resources and professional opportunities.
+                            </p>
+
+                            <a
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-primary">
+                                Explore Careers
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STUDENT REGISTRATION ================= -->
+
+    <section id="registration" class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-7">
+
+                    <div class="card shadow border-0">
+
+                        <div class="card-body p-4 p-md-5">
+
+                            <h2 class="text-center text-primary mb-3">
+                                Student Registration
+                            </h2>
+
+                            <p class="text-center mb-4">
+                                Enter your details to save your career interests.
+                            </p>
+
+
+                            <form id="studentForm">
+
+                                <!-- Full Name -->
+
+                                <div class="mb-3">
+
+                                    <label for="name" class="form-label fw-bold">
+                                        Full Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        class="form-control"
+                                        placeholder="Enter your full name"
+                                        required>
+
+                                </div>
+
+
+                                <!-- Email -->
+
+                                <div class="mb-3">
+
+                                    <label for="email" class="form-label fw-bold">
+                                        Email
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        class="form-control"
+                                        placeholder="Enter your email"
+                                        required>
+
+                                </div>
+
+
+                                <!-- Education -->
+
+                                <div class="mb-3">
+
+                                    <label for="education" class="form-label fw-bold">
+                                        Education
+                                    </label>
+
+                                    <select
+                                        id="education"
+                                        name="education"
+                                        class="form-select"
+                                        required>
+
+                                        <option value="">
+                                            Select education
+                                        </option>
+
+                                        <option value="Diploma">
+                                            Diploma
+                                        </option>
+
+                                        <option value="B.E. / B.Tech">
+                                            B.E. / B.Tech
+                                        </option>
+
+                                        <option value="B.Sc.">
+                                            B.Sc.
+                                        </option>
+
+                                        <option value="BCA">
+                                            BCA
+                                        </option>
+
+                                        <option value="M.E. / M.Tech">
+                                            M.E. / M.Tech
+                                        </option>
+
+                                        <option value="MCA">
+                                            MCA
+                                        </option>
+
+                                        <option value="Other">
+                                            Other
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- Career Interest -->
+
+                                <div class="mb-4">
+
+                                    <label for="interest" class="form-label fw-bold">
+                                        Career Interest
+                                    </label>
+
+                                    <select
+                                        id="interest"
+                                        name="interest"
+                                        class="form-select"
+                                        required>
+
+                                        <option value="">
+                                            Select your career interest
+                                        </option>
+
+                                        <option value="Web Developer">
+                                            Web Developer
+                                        </option>
+
+                                        <option value="Software Developer">
+                                            Software Developer
+                                        </option>
+
+                                        <option value="Data Scientist">
+                                            Data Scientist
+                                        </option>
+
+                                        <option value="Cyber Security">
+                                            Cyber Security
+                                        </option>
+
+                                        <option value="UI/UX Designer">
+                                            UI/UX Designer
+                                        </option>
+
+                                        <option value="Cloud Engineer">
+                                            Cloud Engineer
+                                        </option>
+
+                                        <option value="Other">
+                                            Other
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- Submit Button -->
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary w-100">
+
+                                    Register Now
+
+                                </button>
+
+
+                                <!-- Registration Message -->
+
+                                <div
+                                    id="registrationMessage"
+                                    class="mt-3 text-center"
+                                    role="status"
+                                    aria-live="polite">
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SDG 4 ================= -->
+
+    <section id="sdg" class="py-5">
+
+        <div class="container text-center">
+
+            <h2 class="text-primary mb-4">
+                Sustainable Development Goal 4
+            </h2>
+
+            <h4>Quality Education</h4>
+
+            <p class="mx-auto" style="max-width: 800px;">
+
+                CareerGuide supports the idea of inclusive and equitable
+                quality education by helping students discover learning
+                resources, develop skills and explore career opportunities.
+
+            </p>
+
+            <p>
+                Learning and skill development can help students prepare
+                for future employment and lifelong learning.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center text-primary mb-4">
+                Contact Us
+            </h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-7">
+
+                    <form id="contactForm">
+
+                        <div class="mb-3">
+
+                            <label for="contactName" class="form-label">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contactName"
+                                name="contactName"
+                                class="form-control"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label for="contactEmail" class="form-label">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                name="contactEmail"
+                                class="form-control"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label for="contactMessage" class="form-label">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="contactMessage"
+                                name="contactMessage"
+                                class="form-control"
+                                rows="4"
+                                placeholder="Enter your message"
+                                required></textarea>
+
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                        </button>
+
+                        <p id="contactStatus" class="mt-3"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-primary text-white text-center py-4">
+
+        <div class="container">
+
+            <h5>CareerGuide</h5>
+
+            <p class="mb-1">
+                Explore Careers. Develop Skills. Build Your Future.
+            </p>
+
+            <p class="mb-1">
+                Student Project | BE - Information Technology
+            </p>
+
+            <p class="mb-0">
+                &copy; 2026 CareerGuide. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Custom JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
 
